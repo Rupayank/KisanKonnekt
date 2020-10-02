@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script>
+        function validateform1() {
+            var uname = document.signinform.uname.value;
+            var password = document.signinform.password.value;
+
+            if (uname == null || uname == "") {
+                alert("Username can't be Blank");
+                return false;
+            } else if (password == null || password == "") {
+                alert("Password can't be Blank");
+                return false;
+            }
+
+
+        }
+    </script>
+    <title>Kisan Login</title>
+</head>
+
+<body>
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>&nbsp&nbsp&nbsp&nbsp
+            <a class="navbar-brand align-self-center" href="dash.html">
+            <img src="logo.jpg" width="30" height="30" class="d-inline-block " alt="" loading="lazy">&nbsp
+            KisanKonect</a>
+        </div>
+      
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Change language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Hindi</a>
+                <a class="dropdown-item" href="#">Marathi</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Detect location</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-lg-0 mr-3">
+            <li class="nav-item"><a class="nav-link" href="signupform.html">Sign Up<i class="fa fa-user-plus"></i></a></li>
+            <li><a class="nav-link" href="signin.html">Login  <i class="fa fa-user"></i></a></li>
+          </ul>
+        </div>
+    </nav>
+    <center>
+        <div class="signup">
+            <h1>Welcome Back !!</h1>
+            <form name="signinform" method="post" onsubmit="return validateform1()">
+                <table>
+
+                    <tr>
+                        <th>
+                            <label for="user">Username:</label></th>
+                        <th>
+                            <input type="text" name="uname" class="input" id="user" placeholder="Enter your Username">
+                        </th>
+                    </tr>
+
+
+
+                    <tr>
+
+                        <th>
+                            <label for="pass1">Enter Password:</label></th>
+                        <th>
+                            <input type="password" name="password" class="input" id="pass1" placeholder="Enter your password here">
+                        </th>
+                    </tr><br>
+
+
+                </table><br>
+                <a href="https://google.com">Forgot Password?</a><br><br>
+                <input id="sign" type="submit" value="Sign Up">
+
+
+            </form>
+        </div>
+    </center>
+
+    <div class="footer_signup">
+        <div id="footer_nav">
+            <center>
+
+                <p id="footer_content">Our other handles:</p>
+
+                <a href="google.com">
+                    <ion-icon id="l1" name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="google.com">
+                    <ion-icon id="l2" name="logo-youtube"></ion-icon>
+                </a>
+                <br>
+                <hr>
+
+                <p>&copy 2020 Designed & maintained by Rupayan Karanjai</p>
+            </center>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

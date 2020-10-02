@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Registration</title>
+
+    <script>
+        function validateform() {
+            var fname = document.signupform.fname.value;
+            var lname = document.signupform.lname.value;
+            var uname = document.signupform.uname.value;
+            var email = document.signupform.email.value;
+            var password = document.signupform.password.value;
+            var repass = document.signupform.repass.value;
+
+            if (fname == null || fname == "") {
+                alert("First Name can't be Blank");
+                return false;
+            } else if (lname == null || lname == "") {
+                alert("Last Name can't be Blank");
+                return false;
+            } else if (uname == null || uname == "") {
+                alert("Username can't be Blank");
+                return false;
+            } else if (uname.length < 4) {
+                alert("Username is too short");
+                return false;
+            } else if (password == null || password == "") {
+                alert("Password can't be Blank");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be atleast 6 characters long");
+                return false;
+            } else if (password != repass) {
+                alert("Password does'nt match.Please Re-enter");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--    <img src="leopard.jpg">-->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>&nbsp&nbsp&nbsp&nbsp
+            <a class="navbar-brand align-self-center" href="dash.html">
+            <img src="logo.jpg" width="30" height="30" class="d-inline-block " alt="" loading="lazy">&nbsp
+            KisanKonect</a>
+        </div>
+      
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Change language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Hindi</a>
+                <a class="dropdown-item" href="#">Marathi</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Detect location</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-lg-0 mr-3">
+            <li class="nav-item"><a class="nav-link" href="signupform.html">Sign Up<i class="fa fa-user-plus"></i></a></li>
+            <li><a class="nav-link" href="signin.html">Login  <i class="fa fa-user"></i></a></li>
+          </ul>
+        </div>
+    </nav>
+    <center>
+        <div class="signup">
+            <h1>Welcome !!</h1>
+            <form name="signupform" method="post" onsubmit="return validateform()">
+
+                <table>
+
+                    <tr>
+
+                        <th>
+                            <label for="first">First name:</label></th>
+                        <th>
+                            <input type="text" name="fname" class="input" id="first" placeholder="Enter your Firstname">
+                        </th>
+                    </tr>
+                    <tr>
+
+                        <th>
+                            <label for="last">Last name:</label></th>
+                        <th>
+                            <input type="text" name="lname" class="input" id="last" placeholder="Enter your Lastname">
+                        </th>
+                    </tr>
+                    <tr>
+
+                        <th>
+                            <label for="user">Username:</label></th>
+                        <th>
+                            <input type="text" name="uname" class="input" id="user" placeholder="Enter your Username">
+                        </th>
+                    </tr>
+
+                    <tr>
+
+                        <th>
+                            <label for="email">Email-ID:</label></th>
+                        <th>
+                            <input type="email" name="email" id="email" class="input" placeholder="Enter your Email">
+                        </th>
+                    </tr>
+                    <tr>
+
+                        <th>
+                            <label for="pass">Set Password:</label></th>
+                        <th>
+                            <input type="password" name="password" id="pass" class="input" placeholder="Enter your Password">
+                        </th>
+                    </tr>
+
+                    <tr>
+
+                        <th>
+                            <label for="pass1">Re-enter Password:</label></th>
+                        <th>
+                            <input type="password" name="repass" class="input" id="pass1" placeholder="Re-enter your Password">
+                        </th>
+                    </tr><br>
+
+
+                </table><br>
+                <input id="sign" type="submit" value="Sign Up">
+
+
+        </div>
+    </center>
+
+    <div class="footer_signup">
+        <div id="footer_nav">
+            <center>
+
+                <p id="footer_content">Our other handles:</p>
+
+                <a href="google.com">
+                    <ion-icon id="l1" name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="google.com">
+                    <ion-icon id="l2" name="logo-youtube"></ion-icon>
+                </a>
+                <br>
+                <hr>
+
+                <p>&copy 2020 Designed & maintained by Rupayan Karanjai</p>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body{
+    background-image: url("wall.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.footer_signup {
+    background-color: black;
+    height: 20%;
+    /*    display: block;*/
+    color: white;
+    position: relative;
+    top: 80%;
+    margin: 0;
+    padding-top: 10px;
+}
+.footer {
+    background-color: black;
+    height: 30%;
+    /*    display: block;*/
+    color: white;
+    position: relative;
+    top: 5%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#footer_nav li {
+    display: inline;
+    padding: 15px;
+    vertical-align: middle;
+    /*    margin-left: 20%;*/
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#footer_nav li a {
+    text-decoration: none;
+    color: bisque;
+    padding: 8px;
+    vertical-align: middle;
+    transition: background 0.3s ease-in;
+}
+
+#footer_nav a:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+#footer_content {
+    font-size: 20px;
+}

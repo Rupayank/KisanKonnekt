@@ -1,0 +1,414 @@
+@font-face {
+    src: url(fonts/Lato/Lato-Regular.ttf);
+    font-family: efgh;
+}
+
+body {
+    background-image: url(hostel.jpg);
+    font-family: efgh;
+    transition: 3s ease-in-out;
+}
+
+#l3 {
+    color: white;
+    height: 50px;
+    width: 60px;
+}
+
+
+/*Footer logo*/
+
+#l1 {
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
+
+#l2 {
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
+
+#l1:hover {
+    color: #1bd61b;
+    transition: 0.5s;
+}
+
+#l2:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+#nav1 {
+    position: absolute;
+    top: 10;
+    display: inline;
+    width: 93%;
+    float: right;
+    background-color: #004055;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    font: Tahoma;
+}
+
+
+/*Navigation for other pages */
+
+#nav_other {
+    /*    opacity:.9;*/
+    position: absolute;
+    top: 10;
+    display: inline;
+    width: 99.5%;
+    float: right;
+    background-color: #004055;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    font: Tahoma;
+}
+
+#nav_other ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#nav_other li {
+    display: inline;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+#nav_other li a {
+    text-decoration: none;
+    color: bisque;
+    padding: 8px;
+    vertical-align: middle;
+    transition: background 0.3s ease-in;
+}
+
+#nav_other li a:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+#notice {
+    color: darkblue;
+    position: absolute;
+    top: 74;
+    display: inline;
+    width: 100%;
+    float: right;
+    background-color: white;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font: Tahoma;
+}
+
+#notice ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#notice li {
+    display: inline;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+#nav1 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#nav1 li {
+    display: inline;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+#nav1 li a {
+    text-decoration: none;
+    color: bisque;
+    padding: 8px;
+    vertical-align: middle;
+    transition: background 0.3s ease-in;
+}
+
+#nav1 li a:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.nav_container {
+    background-color: #e5eabe;
+    opacity: .85;
+    width: 15%;
+    height: 80%;
+    margin: 0;
+    margin-top: 46px;
+    list-style: none;
+}
+
+#nav2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+#nav2 ul li a {
+    /*    opacity:0.7;*/
+    text-decoration: none;
+    display: block;
+    background-color: #a0dbaa;
+    font-weight: bolder;
+    color: black;
+    font-size: 22px;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+    line-height: 25px;
+    transition: background .5s .1s ease, transform 1s ease;
+}
+
+#nav2 a:hover {
+    opacity: 1;
+    transform: scale(1.1)translateX(30px);
+    background-color: white;
+}
+
+.content {
+    opacity: 0.8;
+    width: 80%;
+    /*    float:right;*/
+    position: absolute;
+    top: 17%;
+    right: 8px;
+    background-color: #c4f7f7;
+    border: 2px solid #18a82f;
+    border-radius: 10px;
+    padding: 10px;
+    /*    margin-left: 285px;*/
+    font-size: 22px;
+    line-height: 30px;
+}
+
+
+/* .build{
+    
+    width:300px;
+    height:170px;
+    float:left;
+    margin: 10px;
+    margin-right: 20px;
+    border:1px solid aqua;
+    border-radius:10px;
+} */
+
+.para::first-letter {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+/* Our team */
+
+.team {}
+
+.column {
+    border: 5px solid black;
+    border-radius: 10px;
+    position: relative;
+    left: 20%;
+    background-color: #f5f0e4;
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.team_img {
+    height: 250px;
+    width: 50px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* Add some shadows to create a card effect */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Some left and right padding inside the container */
+
+.container {
+    padding: 0 16px;
+}
+
+
+/* Clear floats */
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: black;
+    height: 30%;
+    /*    display: block;*/
+    color: white;
+    position: relative;
+    top: 5%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#footer_nav li {
+    display: inline;
+    padding: 15px;
+    vertical-align: middle;
+    /*    margin-left: 20%;*/
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#footer_nav li a {
+    text-decoration: none;
+    color: bisque;
+    padding: 8px;
+    vertical-align: middle;
+    transition: background 0.3s ease-in;
+}
+
+#footer_nav a:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+#footer_content {
+    font-size: 20px;
+}
+
+
+/* signinform styles */
+
+.signup {
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    background-color: white;
+    border: 5px groove red;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 15px 15px 15px black;
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.signup tr,
+th {
+    text-align: left;
+    padding: 5px;
+}
+
+#sign {
+    background-color: rgb(244, 108, 8);
+    padding: 17px;
+    border-radius: 25px;
+    font-family: fantasy;
+    font-size: 17px;
+}
+
+#sign:hover {
+    transition: 0.2s;
+    background-color: red;
+    color: white;
+    transform: scale(1.14);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-600px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.input {
+    /*    text-align: center;*/
+    border-radius: 2px;
+    padding-left: 3px;
+}
+
+
+@keyframes slideIN {
+    from {
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/*FOOTERS*/
+
+
+/*Signup*/
+
+.footer_signup {
+    background-color: black;
+    height: 20%;
+    /*    display: block;*/
+    color: white;
+    position: relative;
+    top: 80%;
+    margin: 0;
+    padding-top: 10px;
+}
